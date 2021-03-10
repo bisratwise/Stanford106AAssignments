@@ -12,20 +12,24 @@ public class KarelDefendsDemocracy extends SuperKarel {
 				turnLeft();
 				move();
 				//pick up beeper if present
-				while (bee)
+				while (beepersPresent())
+					pickBeeper();
 				turnAround();
 				move();
 				move();
 				//pick up beeper if present
+				while (beepersPresent())
+					pickBeeper();
 				turnAround();
 				move();
 				turnRight();
 			}
 			move();
 		}
+			
 		
 		
-//		move();
+//	move();
 //		{
 //			if (beepersPresent()) {
 //				move();
@@ -34,7 +38,8 @@ public class KarelDefendsDemocracy extends SuperKarel {
 //				move();
 //			}
 //		}
-
+//
 	}
 
 }
+
